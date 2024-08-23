@@ -1,0 +1,116 @@
+.wrapBack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(0,68,168);
+    background: linear-gradient(90deg, rgba(0,68,168,1) 0%, rgba(0,143,219,1) 61%);
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 50px;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1430px;
+}
+
+.imgBlock {
+    position: relative;
+    border-radius: 65px;
+}
+
+.imgBlock img {
+    width: 200px;
+    margin-bottom: -4px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tg {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    max-width: 600px;
+    gap: 30px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .imgBlock img {
+        width: 140px;
+        border-radius: 15px;
+    }
+    .info h3 {
+        font-size: 22px !important;
+    }
+    .info p {
+        font-size: 15px !important;
+    }
+    .btn {
+        width: 170px !important;
+        font-size: 13px !important;
+        padding: 15px !important;
+    }
+    .logoBlock img {
+        width: 140px !important;
+    }
+}
+
+.btn {
+    border: none;
+    padding: 20px;
+    width: 300px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: inherit;
+    font-weight: 700;
+    background-color: rgb(9, 141, 250);
+    box-shadow: 0px 0px 10px 3px rgb(0, 64, 109);
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(52, 162, 251);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.info h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.channel {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.logoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoBlock img {
+    width: 200px;
+    border-radius: 50px;
+}

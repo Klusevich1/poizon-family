@@ -1,0 +1,314 @@
+.formBlock {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+@media (max-width: 400px) {
+    .orderField {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .formBlock {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .formBlock {
+        flex-direction: column;
+    }
+    .customerInfo {
+        width: 100% !important;
+    }
+    .orderBlock {
+        width: 100% !important;
+    }
+}
+
+.customerInfo {
+    width: 50%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form p {
+    margin: 0;
+}
+
+.inputField {
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 7px;
+    text-indent: 8px;
+}
+  
+.errorInput {
+    border: 1px solid rgb(255, 70, 70) ;
+}
+
+.error {
+    font-size: 15px;
+    color: rgb(255, 70, 70);
+    margin: 0;
+}
+
+.orderBlock {
+    width: 50%;
+}
+
+.orderField {
+    background-color: #f6f6f6;
+    width: 100%;
+    /* border-radius: 20px; */
+    height: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.orderField p {
+    margin: 0;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodText {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderTitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.orderDesc {
+    font-weight: 700;
+}
+
+.quantityBtns {
+    width: 120px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantityBtns p {
+    width: 30px;
+    text-align: center;
+}
+
+.quantityBtns button {
+    border: none;
+    background-color: rgb(0,191,193);
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 19px;
+    color: #000;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.quantityBtns button:hover {
+    background-color: rgb(14, 219, 222);
+}
+
+
+
+.resPrice {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    border-top: 1px solid #7d7d7d;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.priceText {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.policy {
+    font-size: 10px;
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+.policy span {
+    color: #5e5e5e;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.policy a {
+    text-decoration: none;
+}
+
+.orderButton {
+    width: 100%;
+}
+
+.btnSubmit {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(0,191,193);
+}
+
+.disabled {
+    color: #2e2e2e !important;
+    background-color: #b3b3b3 !important;
+    cursor: no-drop !important;
+}
+
+.messengerBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.messengerBlock p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.messengers {
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+
+.iconMes {
+    font-size: 45px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    background-color: #ededed;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.06);
+}
+
+.messengers div span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
+/* OPERATOR */
+
+.operatorBlock {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    user-select: none;
+}
+
+@media (max-width: 520px) {
+    .sortBlock {
+      width: 95%;
+    }
+  }
+  
+
+.operatorField {
+    display: flex;
+    flex-direction: column;
+    height: 17px;
+}
+
+.options {
+    position: absolute;
+    z-index: 1;
+    flex-grow: 1;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: start;
+    box-shadow: 0 4px 24px #00000014;;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(232 246 246);
+}
+
+.options div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.options p {
+    margin: 0;
+}
+
+.options a {
+    color: #000;
+    text-decoration: none;
+}
+
+.selectedOperator {
+    color: #000;
+    background-color: rgb(153, 213, 214);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.operatorBlock img {
+    width: 20px;
+}

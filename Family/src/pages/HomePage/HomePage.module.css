@@ -1,0 +1,472 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: relative;
+    z-index: 3;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerBlock {
+    width: 1470px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logoBlock img {
+    user-select: none;
+}
+
+.logoBlock {
+    width: auto;
+    /* height: 100%; */
+}
+
+.iconsGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.iconsGroup a {
+    color: #fff;
+}
+
+.icon {
+    height: 100%;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.heart {
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: auto;
+    height: auto;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: rgb(0,191,193);
+    font-size: 12px;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.searchBlock {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
+    opacity: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 0.2s ease;
+}
+
+.searchWrapper {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: all 2s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.searchInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchBlock input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 25px;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.searchBlock p {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner {
+    position: relative;
+    width: 100%; 
+    min-height: calc(100vh - 240px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.bannerBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inset: 0px;
+}
+
+.textBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    width: 80%;
+    text-align: center;
+}
+
+.textBlock h1 {
+    display: inline-block;
+    max-width: 500px;
+    font-size: 35px;
+    margin: 0;
+}
+
+.textBlock p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    width: 160px;
+    color: #fff;
+    font-family: inherit;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: #ff00c8;
+    background: linear-gradient(183deg,#ff00c8 -2%, #f82525 30%, #ffae00 150%);
+    background: -webkit-linear-gradient(183deg,#ff00c8 -2%, #f82525 30%, #ffae00 150%);
+    background: -moz-linear-gradient(183deg,#ff00c8 -2%, #f82525 30%, #ffae00 150%);
+    cursor: pointer;
+}
+
+.boxImg {
+    position: absolute;
+    left: 12%;
+    top: 15%;
+    transform: translate(-50% , 8%);
+    filter: brightness(75%);
+    height: 340px;
+}
+
+.phoneImg {
+    position: absolute;
+    left: 88%;
+    top: 14%;
+    transform: translate(-50% , 7%) rotate(6deg);
+    height: 410px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    /* align-items: start !important; */
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    outline: none;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.searchLine {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.searchLine a {
+    height: 100%;
+}
+
+.searchBtn {
+    border: none;
+    background-color: cadetblue;
+    height: 100%;
+    width: 200px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.disabled {
+    color: #2e2e2e !important;
+    background-color: #b3b3b3 !important;
+    cursor: no-drop !important;
+}
+
+.searchBtn:hover {
+    background-color: rgb(60, 98, 100);
+}
+
+.title {
+    font-size: 30px !important;
+    color: black;
+    font-weight: 700;
+    margin: 0;
+}
+
+.popReq {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    /* align-items: start !important; */
+}
+
+@media (max-width: 1200px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutText {
+        width: 80% !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logoBlock {
+        transform: scale(0.8);
+    }
+    .icon {
+        font-size: 30px;
+    }
+    .counter {
+        transform: scale(0.8);
+        top: 20px;
+        left: 16px;
+    }
+    .textBlock {
+        width: 90% !important;
+    }
+    .textBlock h1 {
+        font-size: 25px;
+    }
+    .popReq {
+        display: none;
+    }
+    .title {
+        font-size: 22px !important;
+    }
+    .searchLine {
+        height: 40px;
+    }
+    .searchBtn {
+        width: 100px;
+        font-size: 15px;
+    }
+    .popTitle {
+        font-size: 25px !important;
+        font-weight: 700;
+        margin: 0;
+    } 
+    .sneakersBlock p {
+        font-size: 15px;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .video {
+        width: 340px !important;
+        height: 185px !important;
+        border: none;
+    }
+    .title {
+        font-size: 20px !important;
+    }
+    .searchBtn {
+        width: 80px !important;
+    }
+    .sneakersBlock {
+        padding: 0 !important;
+    }
+}
+
+/* @media (max-width: 438px) {
+    .banner {
+        min-height: calc(100vh - 500px) !important;  
+    }
+} */
+
+@media (max-width: 400px) {
+    .headerBlock {
+        max-width: 340px;
+    }
+    .cartBlock {
+        max-width: 350px;
+    }
+    .icon {
+        font-size: 25px;
+    }
+    .counter {
+        top: 17px;
+        left: 13px;
+    }
+}
+
+.listOfReq {
+    list-style: none;
+    padding: 0;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+.listOfReq li {
+    font-size: 14px;
+    color: #000;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #2d2d2d;
+    transition: all 0.2s ease;
+}
+
+.listOfReq a {
+    text-decoration: none;
+}
+
+.listOfReq li:hover {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.description {
+    color: rgb(42, 42, 42);
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.about {
+    display: flex;   
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.line {
+    height: 1px;
+    background-color: black;
+}
+
+.sneakersBlock {
+    width: 90%;
+    max-width: 1220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.popTitle {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sneakersBlock p {
+    width: 80%;
+    margin: 0 auto;
+}

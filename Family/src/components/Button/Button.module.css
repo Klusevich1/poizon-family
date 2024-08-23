@@ -1,0 +1,17 @@
+.btn {
+    width: 250px;
+    font-family: inherit;
+    font-size: 20px;
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #fff;
+}

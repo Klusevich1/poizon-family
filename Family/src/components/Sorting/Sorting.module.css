@@ -1,0 +1,69 @@
+.sortBlock {
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    max-width: 1230px;
+    margin: 0 auto;
+    user-select: none;
+    position: relative;
+    text-align: end;
+}
+
+@media (max-width: 520px) {
+    .sortBlock {
+      width: 95%;
+    }
+  }
+  
+
+.sortField {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 17px;
+}
+
+.options {
+    position: absolute;
+    z-index: 1;
+    flex-grow: 1;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: start;
+    box-shadow: 0 4px 24px #00000014;;
+    top: 110%;
+    margin-top: 12px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(232 246 246);
+}
+
+.options div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options p {
+    margin: 0;
+}
+
+.options a {
+    color: #000;
+    text-decoration: none;
+}
+
+.selectedSort {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,191,193);
+    cursor: pointer;
+}

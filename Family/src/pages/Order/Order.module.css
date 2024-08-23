@@ -1,0 +1,36 @@
+.cartBlock {
+    width: 100%;
+    max-width: 1230px;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media (max-width: 1240px) {
+    .cartBlock {
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 962px) {
+    .cartBlock {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cartBlock {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartBlock {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cartBlock {
+        max-width: 350px;
+    }
+}
