@@ -6,7 +6,7 @@ const cron = require("node-cron");
 const schedule = require("node-schedule");
 const { error } = require("console");
 const uri =
-  "mongodb+srv://sa:test@family.zf625sw.mongodb.net/?retryWrites=true&w=majority&appName=family";
+  "uri";
 
 const client = new MongoClient(uri, {
   serverApi: {
